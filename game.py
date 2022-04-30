@@ -31,7 +31,7 @@ def main():
 
 def show_header():
     print("---------------------------")
-    print("  Rock Paper Scissors v2.0 ")
+    print("  Rock Paper Scissors v2.1 ")
     print("---------------------------")
 
 
