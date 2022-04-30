@@ -29,13 +29,13 @@ rolls = {
 def main():
     print(f"App starting up, v{VERSION}")
     show_header()
-    play_game("You", "Computer")
+    play_game("Player 1", "Computer")
 
 
 def show_header():
     print("---------------------------")
     print("  Rock Paper Scissors")
-    print("         v2.2 ")
+    print(f"         v{VERSION} ")
     print("---------------------------")
 
 
