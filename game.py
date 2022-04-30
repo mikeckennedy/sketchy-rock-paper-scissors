@@ -2,16 +2,24 @@ import random
 
 rolls = {
     'rock': {
-        'defeats': ['scissors'],
-        'defeated_by': ['paper']
+        'defeats': ['scissors', 'lizard'],
+        'defeated_by': ['paper', 'spock']
     },
     'paper': {
-        'defeats': ['rock'],
-        'defeated_by': ['scissors']
+        'defeats': ['rock', 'spock'],
+        'defeated_by': ['scissors', 'lizard']
     },
     'scissors': {
-        'defeats': ['paper'],
-        'defeated_by': ['rock']
+        'defeats': ['paper', 'lizard'],
+        'defeated_by': ['rock', 'spock']
+    },
+    'lizard': {
+        'defeats': ['paper', 'spock'],
+        'defeated_by': ['rock', 'scissors']
+    },
+    'spock': {
+        'defeats': ['rock', 'scissors'],
+        'defeated_by': ['lizard', 'paper']
     },
 }
 
@@ -23,7 +31,7 @@ def main():
 
 def show_header():
     print("---------------------------")
-    print("  Rock Paper Scissors v1.0 ")
+    print("  Rock Paper Scissors v2.0 ")
     print("---------------------------")
 
 
