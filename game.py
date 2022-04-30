@@ -68,6 +68,7 @@ def play_game(player_1, player_2):
 
 
 def get_computer_roll(roll_names):
+    print(" -- Computer biased towards the s -- hint hint")
     names = roll_names + [r for r in roll_names if r.startswith('s')]
     roll2 = random.choice(names)
     return roll2
