@@ -1,5 +1,7 @@
 import random
 
+VERSION = "2.2"
+
 rolls = {
     'rock': {
         'defeats': ['scissors', 'lizard'],
@@ -25,6 +27,7 @@ rolls = {
 
 
 def main():
+    print(f"App starting up, v{VERSION}")
     show_header()
     play_game("You", "Computer")
 
@@ -79,6 +82,7 @@ def find_winner(wins, names):
         if wins.get(name, 0) >= best_of:
             return name
 
+    print("No winner yet, keep playing!")
     return None
 
 
