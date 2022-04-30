@@ -34,7 +34,8 @@ def main():
 
 def show_header():
     print("---------------------------")
-    print("  Rock Paper Scissors v2.2 ")
+    print("  Rock Paper Scissors")
+    print("         v2.2 ")
     print("---------------------------")
 
 
@@ -71,7 +72,7 @@ def play_game(player_1, player_2):
 
 
 def get_computer_roll(roll_names):
-    names = roll_names + [r for r in roll_names if r.startswith('s')]
+    names = roll_names + 2*[r for r in roll_names if r.startswith('s')]
     roll2 = random.choice(names)
     return roll2
 
