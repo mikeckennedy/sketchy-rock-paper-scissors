@@ -1,28 +1,28 @@
 import random
 import sys
 
-VERSION = "2.2"
+VERSION = "2.3"
 
 rolls = {
     'rock': {
-        'defeats': ['scissors', 'lizard'],
+        'defeats': ['scissors', 'alligator'],
         'defeated_by': ['paper', 'spock']
     },
     'paper': {
         'defeats': ['rock', 'spock'],
-        'defeated_by': ['scissors', 'lizard']
+        'defeated_by': ['scissors', 'alligator']
     },
     'scissors': {
-        'defeats': ['paper', 'lizard'],
+        'defeats': ['paper', 'alligator'],
         'defeated_by': ['rock', 'spock']
     },
-    'lizard': {
+    'alligator': {
         'defeats': ['paper', 'spock'],
         'defeated_by': ['rock', 'scissors']
     },
     'spock': {
         'defeats': ['rock', 'scissors'],
-        'defeated_by': ['lizard', 'paper']
+        'defeated_by': ['alligator', 'paper']
     },
 }
 
